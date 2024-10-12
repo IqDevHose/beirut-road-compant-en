@@ -43,7 +43,7 @@ const Home = () => {
               <Link to={"/about"}>
                 <Button
                   color="black"
-                  className="rounded-full hover:bg-gray-800 px-6 py-2 text-xl"
+                  className="rounded-full hover:bg-gray-800 px-6 py-2 text-lg md:text-lg"
                 >
                   About us
                 </Button>
@@ -68,7 +68,7 @@ const Home = () => {
       <section className="bg-gray-100 py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">about us</h2>
+            <h2 className="text-5xl font-bold mb-6">about us</h2>
             <p className="text-gray-700 mb-8 text-lg">
               We are a company specialized in clothing and cosmetics trading, headquartered in Baghdad. We offer a wide range of the latest fashion and personal care products, committed to providing high quality products at competitive prices to meet the needs of all our customers. We always strive to provide a distinctive shopping experience and exceptional customer service to ensure your satisfaction and trust.            </p>
             {/* <Button className="bg-lime-300 text-gray-800 rounded-full w-40 py-3 hover:bg-lime-400 transition-colors">
