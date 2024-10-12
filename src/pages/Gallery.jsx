@@ -7,10 +7,13 @@ const Gallery = () => {
   const endImageNumber = 71; // Ending image number
   const galleryImages = [];
 
-  // Generate paths for images from 34 to 98
+  // Generate paths for images from 34 to 71
   for (let i = startImageNumber; i <= endImageNumber; i++) {
     const imageNumber = i.toString().padStart(4, "0"); // Pads with leading zeros (e.g., 0034)
-    galleryImages.push(`/assets/IMG-20240929-WA${imageNumber}.jpg`);
+    galleryImages.push({
+      src: `/assets/IMG-20240929-WA${imageNumber}.jpg`,
+      price: (Math.random() * (100 - 20) + 20).toFixed(2), // Random price between $20 and $100
+    });
   }
 
   // State for modal
@@ -31,11 +34,11 @@ const Gallery = () => {
   const ImageCard = React.memo(({ image, index }) => (
     <Card
       key={index}
-      className="rounded-lg shadow-lg cursor-pointer px-4 md:px-0" // Add cursor-pointer for click indication
-      onClick={() => openModal(image)} // Open modal on image click
+      className="rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-300 ease-in-out px-4 md:px-0"
+      onClick={() => openModal(image.src)}
     >
       <img
-        src={image}
+        src={image.src}
         alt={`Gallery Image ${index + 1}`}
         className="rounded-lg object-cover"
         style={{ width: "100%", height: "auto" }}
@@ -46,6 +49,10 @@ const Gallery = () => {
           }
         }}
       />
+      {/* Price Section */}
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-gray-800">${image.price}</h3>
+      </div>
     </Card>
   ));
 
@@ -55,15 +62,12 @@ const Gallery = () => {
 
       {/* Responsive Grid for Gallery */}
       <ResponsiveMasonry
-        columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1000:4 }}
+        columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1000: 4 }}
       >
-
         <Masonry gutter="30px" columnsCount={4}>
-
           {galleryImages.map((image, index) => (
-            <ImageCard key={index} image={image} index={index} /> 
+            <ImageCard key={index} image={image} index={index} />
           ))}
-
         </Masonry>
       </ResponsiveMasonry>
 
@@ -71,11 +75,11 @@ const Gallery = () => {
       {modalOpen && (
         <div
           className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
-          onClick={closeModal} // Close modal on backdrop click
+          onClick={closeModal}
         >
           <div
-            className="relative bg-white p-2 rounded-lg shadow-lg "
-            onClick={(e) => e.stopPropagation()} // Prevent click event from bubbling up to the backdrop
+            className="relative bg-white p-2 rounded-lg shadow-lg"
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={closeModal}
@@ -86,7 +90,7 @@ const Gallery = () => {
             <img
               src={selectedImage}
               alt="Large View"
-              className="max-w-[400px] h-auto rounded-lg" // Set a maximum width for the image
+              className="max-w-[400px] h-auto rounded-lg"
             />
           </div>
         </div>
