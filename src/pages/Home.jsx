@@ -33,20 +33,19 @@ const Home = () => {
           <div className="w-full md:w-1/2 mb-10 md:mb-0 px-4">
             <div className="max-w-lg">
               <div className="h-1 w-10 bg-black mb-4"></div>
-              <h1 className="font-bold text-4xl mb-6">
-                شركة طريق بيروت للتجارة
+              <h1 className="font-bold text-4xl md:text-5xl mb-6">
+                Beirut Road Trading Company
               </h1>
               <p
                 className="text-lg text-gray-700 mb-6"
               >
-                شركة متخصصة في بيع الملابس ومنتجات التجميل، تقدم أحدث الصيحات بأسعار تنافسية. يقع مقر الشركة في بغداد وتلتزم بتوفير منتجات عالية الجودة وخدمة عملاء مميزة.
-              </p>
+                A company specialized in selling clothing and beauty products, offering the latest trends at competitive prices. The company is headquartered in Baghdad and is committed to providing high quality products and excellent customer service.              </p>
               <Link to={"/about"}>
                 <Button
                   color="black"
                   className="rounded-full hover:bg-gray-800 px-6 py-2 text-xl"
                 >
-                  من نحن
+                  About us
                 </Button>
               </Link>
             </div>
@@ -69,10 +68,9 @@ const Home = () => {
       <section className="bg-gray-100 py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
-            <h2 className="text-4xl font-bold mb-6">من نحن</h2>
-            <p className="text-gray-700 mb-8">
-              نحن شركة متخصصة في تجارة الملابس ومواد التجميل، مقرنا في بغداد. نقدم مجموعة واسعة من أحدث صيحات الموضة ومنتجات العناية الشخصية، ملتزمون بتوفير منتجات عالية الجودة بأسعار تنافسية تلبي احتياجات جميع عملائنا. نسعى دائمًا إلى تقديم تجربة تسوق مميزة وخدمة عملاء استثنائية لضمان رضاكم وثقتكم.
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">about us</h2>
+            <p className="text-gray-700 mb-8 text-lg">
+              We are a company specialized in clothing and cosmetics trading, headquartered in Baghdad. We offer a wide range of the latest fashion and personal care products, committed to providing high quality products at competitive prices to meet the needs of all our customers. We always strive to provide a distinctive shopping experience and exceptional customer service to ensure your satisfaction and trust.            </p>
             {/* <Button className="bg-lime-300 text-gray-800 rounded-full w-40 py-3 hover:bg-lime-400 transition-colors">
               Shop now
             </Button> */}
@@ -91,9 +89,9 @@ const Home = () => {
       <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <h1
-            className="text-3xl font-bold text-center mb-8" // Reduced heading size and margin
+            className="text-4xl md:text-5xl font-bold text-center mb-8" // Reduced heading size and margin
           >
-            منتجاتنا
+            Our Gallery
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {/* Left Column: Two stacked images */}
@@ -146,7 +144,7 @@ const Home = () => {
               <button
                 className="bg-black text-white rounded-full hover:bg-gray-800 px-6 py-2 text-lg font-semibold" // Reduced padding
               >
-                شاهد المزيد
+                See more
               </button>
             </Link>
           </div>
@@ -163,20 +161,20 @@ const Home = () => {
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 text-center w-full">
           <h1
-            className="text-3xl font-bold text-white mb-4"
+            className="text-3xl md:text-5xl font-bold text-white mb-4"
           >
-            تواصل معنا
+            Contact us
           </h1>
           <p
             className="text-lg text-gray-300 mb-8"
           >
-            لا تتردد في إرسال رسالة لنا
+            Feel free to send us a message
           </p>
           <a href="mailto:nfoddddd@beirut.iq">
             <button
               className="bg-white rounded-full hover:bg-gray-300 px-6 py-1 text-gray-800 font-semibold text-lg"
             >
-              ابدأ
+              Get Started
             </button>
           </a>
         </div>

@@ -12,37 +12,30 @@ const About = () => {
             className="w-64 h-48 object-cover rounded-full mb-6"
           />
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800">
-            من نحن
+            About Us
           </h1>
         </div>
-        <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
-          نحن شركة متخصصة في تجارة الملابس ومواد التجميل، نحرص على تقديم تشكيلة متنوعة من أحدث صيحات الموضة ومنتجات التجميل التي تلبي احتياجات جميع العملاء. نؤمن بأهمية الجودة ونختار منتجاتنا بعناية لضمان رضا عملائنا. كما نحرص على توفير تجربة تسوق سهلة ومريحة، مع دعم متواصل من خلال خدمة عملاء متميزة. هدفنا هو أن نكون وجهتكم الأولى لكل ما يتعلق بالموضة والجمال، ونسعى دائمًا لتقديم الأفضل في كل مرة تتسوقون فيها معنا.
-        </p>
+        <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto text-left">
+          We are a company specialized in clothing and cosmetics trading, keen to provide a diverse range of the latest fashion trends and beauty products that meet the needs of all customers. We believe in the importance of quality and carefully select our products to ensure customer satisfaction. We also strive to provide an easy and comfortable shopping experience, with continuous support through excellent customer service. Our goal is to be your first destination for everything related to fashion and beauty, and we always strive to provide the best every time you shop with us.        </p>
       </section>
 
       {/* History Section */}
       <section className="container mx-auto px-6 py-12">
         <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
-          تاريخ العلامة التجارية
+          History of the Brand
         </h2>
-        <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto text-center">
-          تأسست علامتنا التجارية من شغف بالموضة والجمال، بهدف تقديم منتجات عالية الجودة تجمع بين الأناقة والتميز. منذ البداية، التزمنا بتوفير مجموعة متنوعة من الملابس ومنتجات التجميل التي تلبي احتياجات وأذواق عملائنا. انطلقنا من بغداد كشركة صغيرة، ومن خلال التفاني والتركيز على رضا العملاء، نمونا لنصبح اسماً موثوقاً في هذا المجال. اليوم، نواصل التطور بتقديم أحدث الصيحات وأفضل المنتجات، مع الحفاظ على قيمنا الأساسية في التميز وخدمة العملاء.
-        </p>
+        <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto text-center text-left">
+          Our brand was founded on a passion for fashion and beauty, with the aim of providing high-quality products that combine elegance and distinction. From the beginning, we have been committed to providing a variety of clothing and beauty products that meet the needs and tastes of our customers. We started out as a small company in Baghdad, and through dedication and focus on customer satisfaction, we have grown to become a trusted name in the industry. Today, we continue to evolve by offering the latest trends and the best products, while maintaining our core values ​​of excellence and customer service.        </p>
       </section>
 
       {/* Promise Section */}
       <section className="container mx-auto px-6 py-12">
         <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
-          هدفنا
+          Our Promise
         </h2>
-        <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto text-center">
-          وعدنا هو تقديم منتجات عالية الجودة من الملابس ومواد التجميل تعكس أحدث الصيحات وتلبي توقعات عملائنا. نحن ملتزمون بتقديم خدمة استثنائية، مما يضمن تجربة تسوق سلسة، ونسعى باستمرار لتحسين خدماتنا لتلبية احتياجات عملائنا المتغيرة. في صميم علامتنا التجارية، يكمن الالتزام بالجودة والموثوقية ورضا العملاء، مما يضمن أن كل عملية شراء تضيف قيمة ورضا لعملائنا.
-        </p>
+        <p className="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto text-left">
+          Our promise is to provide high-quality clothing and beauty products that reflect the latest trends and meet our customers’ expectations. We are committed to providing exceptional service, ensuring a seamless shopping experience, and we constantly strive to improve our services to meet the changing needs of our customers. At the core of our brand is a commitment to quality, reliability and customer satisfaction, ensuring that every purchase adds value and satisfaction to our customers.        </p>
       </section>
-
-
-
-
     </div>
   );
 };

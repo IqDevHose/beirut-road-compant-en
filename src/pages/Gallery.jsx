@@ -51,7 +51,7 @@ const Gallery = () => {
 
   return (
     <div className="container mx-auto py-16">
-      <h2 className="text-3xl font-bold text-center mb-8">المنتجات</h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">Gallery</h2>
 
       {/* Responsive Grid for Gallery */}
       <ResponsiveMasonry
