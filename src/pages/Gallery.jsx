@@ -7,12 +7,20 @@ const Gallery = () => {
   const endImageNumber = 71; // Ending image number
   const galleryImages = [];
 
-  // Generate paths for images from 34 to 71
+  // Define static prices for images
+  const staticPrices = [
+    29.99, 45.50, 35.00, 50.00, 42.75, 60.99, 50.50, 70.00, 40.00, 55.00,
+    37.50, 48.00, 61.99, 38.50, 45.00, 30.00, 65.75, 33.99, 57.00, 39.50,
+    // Add more prices as needed to cover all images from 34 to 71
+  ];
+
+  // Generate paths for images from 34 to 71 with static prices
   for (let i = startImageNumber; i <= endImageNumber; i++) {
     const imageNumber = i.toString().padStart(4, "0"); // Pads with leading zeros (e.g., 0034)
+    const price = staticPrices[i - startImageNumber] || 20.00; // Use static price or default to $20
     galleryImages.push({
       src: `/assets/IMG-20240929-WA${imageNumber}.jpg`,
-      price: (Math.random() * (100 - 20) + 20).toFixed(2), // Random price between $20 and $100
+      price: price.toFixed(2), // Fixed price
     });
   }
 
