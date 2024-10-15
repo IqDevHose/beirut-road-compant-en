@@ -42,12 +42,12 @@ export function MyNavbar() {
         <div className="flex items-center justify-between h-20"> {/* Increased height */}
 
 
-          <div className="flex items-center">
+          <div className="flex">
             <Link to="/" className="flex-shrink-0">
               <img
-                src="/logo.png"
+                src="/logo.svg"
                 alt="beirut Logo"
-                className="w-64 object-cover"
+                className="w-44 object-cover"
               />
             </Link>
           </div>
