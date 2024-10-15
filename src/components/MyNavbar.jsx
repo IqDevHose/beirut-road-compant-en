@@ -39,7 +39,7 @@ export function MyNavbar() {
     <nav className="sticky top-0 z-10 bg-white/80 backdrop-blur-md shadow-sm">
       {/* Adjusted padding */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
-        <div className="flex items-center justify-between h-20"> {/* Increased height */}
+        <div className="flex items-center justify-between h-16 md:h-20"> {/* Increased height */}
 
 
           <div className="flex">
@@ -47,7 +47,7 @@ export function MyNavbar() {
               <img
                 src="/beruit-WHITEBACKGROUND.svg"
                 alt="beirut Logo"
-                className="w-40 object-cover"
+                className="w-28 md:w-36 object-cover"
               />
             </Link>
           </div>
