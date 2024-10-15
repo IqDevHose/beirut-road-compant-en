@@ -9,12 +9,12 @@ const Footer = () => {
         {/* Left Section - Logo and Company Name */}
         <div className="flex items-center">
           <img
-            src="/logo2.png"
+            src="/beruit-WHITEBACKGROUND.svg"
             alt="beirut Logo"
-            className="w-20 object-cover"
+            className="w-28 object-cover"
           />
           <div>
-            <h3 className="text-xl font-bold text-white mr-2">
+            <h3 className="text-lg md:text-xl font-bold text-white mr-2">
               Beirut Road Trading Company - Limited Liability
             </h3>
             <p className="text-sm text-gray-400 mr-2">
@@ -25,9 +25,9 @@ const Footer = () => {
 
 
 
-        <div className="flex  flex-col items-end">
+        <div className="flex flex-col items-end">
           <div className="flex items-center gap-3 mt-3 ">
-            <a href="tel:123456789 964+">+964 07510851350</a>
+            <a  href="tel:07510851350 964+">+964 07510851350</a>
             <FaPhone />
           </div>
 
